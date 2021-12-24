@@ -1,0 +1,200 @@
+* {
+    margin: 0;
+    padding: 0;
+   }
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.header {
+    min-height: 75px; /*check to see if this is best practice */
+    background-color: #1f2937;
+    color: white;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    padding-left: 12%;
+    padding-right: 12%;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    margin-left: auto;
+    gap: 40px;
+    font-size: 18px;
+}
+
+.header p {
+    font-size: 24px;
+}
+
+.hero {
+    height: 300px; /* if I make this a % height, my justify-content: space between for .hero div does not work */
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-left: 12%;
+    padding-right: 12%;
+    padding-top: 7%;
+    padding-bottom: 7%;
+    background-color: #1f2937;
+    color: white;
+    gap: 20px;
+    }
+
+.hero div {
+    display: flex;
+    flex: 1;
+    height: 100%;
+    flex-direction: column;
+    width: 45%;
+    align-items: flex-start;
+    justify-content: space-between;
+       }
+
+.hero h1 {
+    font-size: 48px;
+}
+
+.hero p {
+    font-size: 18px;
+}
+
+.image-container {
+    flex: 1;
+    width: auto;
+}
+
+.image-container img {
+    height: 100%;
+    width: 100%;
+}
+
+.hero button {
+    padding:7px 14px;
+    background-color: #3882F6;
+    color: white;
+    font-weight: bold;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.information {
+    height: 475px;
+    padding-left: 12%;
+    padding-right: 12%;
+    padding-top: 4%;
+    }
+
+.info-title {
+    font-size: 36px;
+    font-weight: bolder;
+    padding-bottom: 4%;
+    display: flex;
+    justify-content: center;
+}
+
+.tiles {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 6%;
+    padding-right: 6%;
+}
+
+.group {
+    display: flex;
+    flex-direction: column;
+    max-width: 200px;
+    max-height: 200px;
+    gap: 20px;
+    }
+
+.text {
+    text-align: center;
+}
+
+.group img {
+    border-radius: 10%;
+}
+
+.quote-panel {
+    height: 180px;
+    padding-left: 16%;
+    padding-right: 16%;
+    padding-top: 6%;
+    padding-bottom: 5%;
+    background-color: #e5e7eb;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.quote {
+    font-size: 30px;
+    font-style: italic;
+}
+
+.attribute {
+    margin-left: auto;
+    font-weight: bold;
+    margin-right: 15px;
+    font-size: 22px;
+}
+
+.call-to-action {
+    height: 180px;
+    padding-left: 25%;
+    padding-right: 25%;
+    padding-top: 6%;
+    padding-bottom: 7%;
+}
+
+.cta-box {
+    background-color: #3882F6;
+    border-radius: 15px;
+    height: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 100px;
+    color: white;
+    padding-bottom: 70px;
+}
+
+.sign-up {
+    font-size: 36px;
+    font-weight: bold;
+    padding-bottom: 3px;
+}
+
+.hard-enough {
+    font-size: 24px;
+}
+
+.sign-up-button {
+    padding:7px 14px;
+    background-color: #3882F6;
+    color: white;
+    font-weight: bold;
+    border-radius: 4px;
+    outline-color: white;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.footer{
+    min-height: 75px; /*check to see if this is best practice */
+    background-color: #1f2937;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
