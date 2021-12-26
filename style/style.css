@@ -33,10 +33,11 @@ ul {
 }
 
 .hero {
-    height: 300px; /* if I make this a % height, my justify-content: space between for .hero div does not work */
+    width: auto;
+    height: auto;
     display: flex;
     align-items: flex-start;
-    justify-content: space-between;
+    /*how to add gap between the text and button? */
     padding-left: 12%;
     padding-right: 12%;
     padding-top: 7%;
@@ -46,14 +47,14 @@ ul {
     gap: 20px;
     }
 
-.hero div {
+.hero-text {
     display: flex;
     flex: 1;
-    height: 100%;
+    min-height: 100%;
     flex-direction: column;
-    width: 45%;
     align-items: flex-start;
     justify-content: space-between;
+    gap: 15px;
        }
 
 .hero h1 {
@@ -61,12 +62,13 @@ ul {
 }
 
 .hero p {
-    font-size: 18px;
+    font-size: 20px;
 }
 
 .image-container {
     flex: 1;
     width: auto;
+    height: auto;
 }
 
 .image-container img {
@@ -87,7 +89,7 @@ ul {
 }
 
 .information {
-    height: 475px;
+    height: auto;
     padding-left: 12%;
     padding-right: 12%;
     padding-top: 4%;
@@ -97,35 +99,30 @@ ul {
     font-size: 36px;
     font-weight: bolder;
     padding-bottom: 4%;
-    display: flex;
-    justify-content: center;
+    text-align: center;
 }
 
-.tiles {
+.container {
     display: flex;
-    justify-content: space-between;
-    padding-left: 6%;
-    padding-right: 6%;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-bottom: 6%;
 }
-
-.group {
-    display: flex;
-    flex-direction: column;
-    max-width: 200px;
-    max-height: 200px;
-    gap: 20px;
-    }
 
 .text {
+    max-width: 200px;
     text-align: center;
+    padding-top: 10px;
 }
 
 .group img {
     border-radius: 10%;
+    width: 200px;
+    height: 200px;
 }
 
 .quote-panel {
-    height: 180px;
+    height: auto;
     padding-left: 16%;
     padding-right: 16%;
     padding-top: 6%;
@@ -149,7 +146,7 @@ ul {
 }
 
 .call-to-action {
-    height: 180px;
+    height: auto;
     padding-left: 25%;
     padding-right: 25%;
     padding-top: 6%;
@@ -159,13 +156,14 @@ ul {
 .cta-box {
     background-color: #3882F6;
     border-radius: 15px;
-    height: 140px;
+    border:2px solid rgb(74, 51, 204);
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    gap: 100px;
+    gap: 30px;
     color: white;
-    padding-bottom: 70px;
+    padding: 40px;
 }
 
 .sign-up {
