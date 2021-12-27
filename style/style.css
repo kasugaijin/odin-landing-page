@@ -76,6 +76,10 @@ ul {
     width: 100%;
 }
 
+@media screen and (max-width: 1500px) {
+    .image-container img {display: none;}
+}
+
 .hero button {
     padding:7px 14px;
     background-color: #3882F6;
